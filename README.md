@@ -1,2 +1,2 @@
 # mi-rutina-app
-Clari rutina
+Mi rutina de ejercicios en el gym de casa

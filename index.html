@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Rutina</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00c853">
+</head>
+
+<body style="background:black; color:white; text-align:center;">
+
+<h1 id="ejercicio"></h1>
+<p id="detalle"></p>
+
+<button onclick="completar()">Completar</button>
+
+<script>
+let ejercicios = [
+  { nombre: "Sentadillas", detalle: "3 x 12" },
+  { nombre: "Plancha", detalle: "30 seg" }
+];
+
+let i = 0;
+
+function mostrar() {
+  document.getElementById("ejercicio").innerText = ejercicios[i].nombre;
+  document.getElementById("detalle").innerText = ejercicios[i].detalle;
+}
+
+function completar() {
+  i++;
+  if (i < ejercicios.length) {
+    mostrar();
+  } else {
+    alert("Rutina terminada");
+  }
+}
+
+mostrar();
+</script>
+
+</body>
+</html>
